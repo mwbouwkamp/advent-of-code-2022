@@ -10,7 +10,7 @@ public class ReadPuzzleInput {
 
     private static final String PATH = new File("").getAbsolutePath() + "\\src\\main\\resources\\";
 
-    public List<String> readPuzzleLines(String fileName) throws IOException {
+    public static List<String> readPuzzleLines(String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(PATH + fileName));
         List<String> lines = reader.lines().collect(Collectors.toList());
         reader.close();
