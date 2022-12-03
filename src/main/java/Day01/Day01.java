@@ -11,6 +11,7 @@ public class Day01 {
 
         Day01Solver solver = new Day01Solver();
         System.out.println(solver.solveDay01a(input));
+        System.out.println(solver.solveDay01a2(input));
         System.out.println(solver.solveDay01b(input));
     }
 }
