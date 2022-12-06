@@ -17,7 +17,7 @@ public class ReadPuzzleInput {
         return lines;
     }
 
-    public String readPuzzleSingleLine(String fileName) throws IOException {
+    public static String readPuzzleSingleLine(String fileName) throws IOException {
         return readPuzzleLines(fileName).get(0);
     }
 
