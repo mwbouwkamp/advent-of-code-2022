@@ -13,17 +13,5 @@ public class Day09 {
         System.out.println(solver.solveDay09());
         Day09Solver solverDay09b = new Day09Solver(lines, 10);
         System.out.println(solverDay09b.solveDay09());
-
-        List<String> test = new ArrayList<>();
-        test.add("R 5");
-        test.add("U 8");
-        test.add("L 8");
-        test.add("D 3");
-        test.add("R 17");
-        test.add("D 10");
-        test.add("L 25");
-        test.add("U 20");
-        Day09Solver solverTest = new Day09Solver(test, 10);
-        System.out.println(solverTest.solveDay09());
     }
 }

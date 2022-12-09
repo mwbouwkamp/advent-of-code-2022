@@ -77,7 +77,7 @@ public class Day09Solver {
                             throw new IllegalArgumentException("Command not allowed: " + commandParts[0]);
                     }
                 }
-                if (!isOverlapping(head, tail) && !isTouching(head, tail)) {
+                if (!isTouching(head, tail)) {
                     tail = whereTo(head, tail, commandParts[0]);
                 }
                 rope.set(r, head);
@@ -111,9 +111,5 @@ public class Day09Solver {
 
     private boolean isTouching(Point first, Point second) {
         return Math.abs(first.x - second.x) <= 1 && Math.abs(first.y - second.y) <= 1;
-    }
-
-    private boolean isOverlapping(Point first, Point second) {
-        return first.equals(second);
     }
 }
