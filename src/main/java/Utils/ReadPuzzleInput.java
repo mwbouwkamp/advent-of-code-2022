@@ -42,7 +42,7 @@ public class ReadPuzzleInput {
                 .collect(Collectors.toList());
     }
 
-    public List<String> readPuzzleStrings(String fileName, String spliterator) throws IOException {
+    public static List<String> readPuzzleStrings(String fileName, String spliterator) throws IOException {
         return new ArrayList<>(Arrays.asList(readPuzzleSingleLine(fileName).split(spliterator)));
     }
 }
