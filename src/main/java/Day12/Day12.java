@@ -10,6 +10,7 @@ public class Day12 {
         List<String> input = ReadPuzzleInput.readPuzzleLines("input12.txt");
         Day12Solver solver = new Day12Solver(input);
         System.out.println(solver.solveDay12a());
+        System.out.println(solver.solveDay12b());
 
     }
 }
