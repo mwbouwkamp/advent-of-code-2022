@@ -21,7 +21,7 @@ public class ReadPuzzleInput {
         return readPuzzleLines(fileName).get(0);
     }
 
-    public List<Integer> readPuzzleIntegers(String fileName, String spliterator) throws IOException {
+    public static List<Integer> readPuzzleIntegers(String fileName, String spliterator) throws IOException {
         return Arrays.stream(readPuzzleSingleLine(fileName).split(spliterator))
                 .mapToInt(Integer::parseInt)
                 .boxed()
