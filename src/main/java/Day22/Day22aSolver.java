@@ -6,11 +6,11 @@ import java.awt.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Day22Solver {
+public class Day22aSolver {
     MonkeyMap map;
     String instructions;
 
-    public Day22Solver(List<String> input) {
+    public Day22aSolver(List<String> input) {
         this.map = new MonkeyMap(input.stream()
                 .filter(line -> !line.equals(""))
                 .filter(line -> !line.contains("R"))
@@ -21,7 +21,6 @@ public class Day22Solver {
     }
 
     public int solveDay22a() {
-        System.out.println(map.position);
         while (instructions.length() > 0) {
             if (instructions.startsWith("L")) {
                 map.rotate("L");
